@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name             = 'SwpKeyChain'
-  s.version          = '1.0.0'
+  s.version          = '1.0.1'
   s.summary          = ' KeyChain 存储工具 '
 
 
@@ -40,7 +40,7 @@ TODO: KeyChain 存储工具
   s.requires_arc          = true
 
   # s.resource_bundles = {
-  #   'SwpLocation' => ['SwpLocation/Assets/*.png']
+  #   'SwpKeyChain' => ['SwpKeyChain/Assets/*.png']
   # }
 
   # s.public_header_files = 'Pod/Classes/**/*.h'

@@ -51,7 +51,7 @@ SwpKeyChain.swpKeyChainSetData(key, value);
 SwpKeyChainGetData(key);
 
 //  删除数据
-SwpKeyChainGetData(key);
+SwpKeyChainDelete(key);
 [SwpKeyChain swpKeyChainDelete:key];
 SwpKeyChain.swpKeyChainDelete(key);
 ```
@@ -60,6 +60,13 @@ SwpKeyChain.swpKeyChainDelete(key);
 
 
 ### 版本记录
+
+> * 版本版本：1.0.1
+> * 更新时间：2018-05-17 17:35:43
+> * 更新内容：
+>>  *  修改 .md 文件。
+
+>> -------
 
 > * 版本版本：1.0.0
 > * 更新时间：2018-05-17 17:26:06
@@ -81,7 +88,5 @@ SwpKeyChain.swpKeyChainDelete(key);
  > * **著作权归 ©swp_song，如需转载请标明出处**
 
 -------
-
-
 
 
