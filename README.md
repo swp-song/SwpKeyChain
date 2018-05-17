@@ -2,8 +2,10 @@
 
 [![Xcode](https://img.shields.io/badge/Xcode-9.3-25B1F6.svg)](https://developer.apple.com/xcode)
 [![iOS](https://img.shields.io/badge/iOS-8.0+-1C75AF.svg)](https://developer.apple.com/xcode)
-[![Build Status](https://travis-ci.org/swp-song/SwpKeyChain.svg?branch=master)](https://travis-ci.org/swp-song/SwpKeyChain)
-
+[![CI Status](https://img.shields.io/travis/swp-song/SwpKeyChain.svg?style=flat)](https://travis-ci.org/swp-song/SwpKeyChain)
+[![Version](https://img.shields.io/cocoapods/v/SwpKeyChain.svg?style=flat)](https://cocoapods.org/pods/SwpKeyChain)
+[![License](https://img.shields.io/cocoapods/l/SwpKeyChain.svg?style=flat)](https://cocoapods.org/pods/SwpKeyChain)
+[![Platform](https://img.shields.io/cocoapods/p/SwpKeyChain.svg?style=flat)](https://cocoapods.org/pods/SwpKeyChain)
 
 
 -------
@@ -61,6 +63,13 @@ SwpKeyChain.swpKeyChainDelete(key);
 
 ### 版本记录
 
+> * 版本版本：1.0.2
+> * 更新时间：2018-05-17 18:42:25
+> * 更新内容：
+>>  *  更新一些备注，pod 替换
+
+>> -------
+
 > * 版本版本：1.0.1
 > * 更新时间：2018-05-17 17:35:43
 > * 更新内容：
@@ -68,12 +77,7 @@ SwpKeyChain.swpKeyChainDelete(key);
 
 >> -------
 
-> * 版本版本：1.0.0
-> * 更新时间：2018-05-17 17:26:06
-> * 更新内容：
->>  *  第一次上传代码
 
->> -------
 
 -------
 

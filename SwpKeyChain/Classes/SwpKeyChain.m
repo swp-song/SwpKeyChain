@@ -115,7 +115,9 @@ void SwpKeyChainDelete(NSString *key) {
 }
 
 
+#pragma mark - Private Methods
 
+// 根据 key 保存 KeyChain 数据
 FOUNDATION_STATIC_INLINE void _SaveKeyChain(NSString *service, id value) {
     
     
@@ -133,6 +135,7 @@ FOUNDATION_STATIC_INLINE void _SaveKeyChain(NSString *service, id value) {
     
 }
 
+// 根据 key 获取 KeyChain 数据
 FOUNDATION_STATIC_INLINE id _GetKeyChain(NSString *service) {
     id datas = nil;
     NSMutableDictionary *keyChainQuery = _KeyChainQuery(service).mutableCopy;
@@ -154,11 +157,13 @@ FOUNDATION_STATIC_INLINE id _GetKeyChain(NSString *service) {
     return datas;
 }
 
+// 根据 key 删除 KeyChain
 FOUNDATION_STATIC_INLINE void _DeleteService(NSString *service) {
     NSMutableDictionary *keyChainQuery = _KeyChainQuery(service).mutableCopy;
     SecItemDelete((CFDictionaryRef)keyChainQuery);
 }
 
+// 获取查询字典
 FOUNDATION_STATIC_INLINE NSDictionary * _KeyChainQuery(NSString *service) {
     
     NSMutableDictionary *keys = [NSMutableDictionary dictionaryWithObjectsAndKeys:
