@@ -6,14 +6,15 @@
 [![Version](https://img.shields.io/cocoapods/v/SwpKeyChain.svg?style=flat)](https://cocoapods.org/pods/SwpKeyChain)
 [![License](https://img.shields.io/cocoapods/l/SwpKeyChain.svg?style=flat)](https://cocoapods.org/pods/SwpKeyChain)
 [![Platform](https://img.shields.io/cocoapods/p/SwpKeyChain.svg?style=flat)](https://cocoapods.org/pods/SwpKeyChain)
-[![SwpKeyChainAPI](https://img.shields.io/badge/SwpKeyChainAPI-v1.1.0-44E0D3.svg)](https://swp-song.com/docs/SwpKeyChain/)
+[![SwpKeyChainAPI](https://img.shields.io/badge/SwpKeyChainAPI-v1.2.0-44E0D3.svg)](https://swp-song.com/docs/SwpKeyChain/)
 
 ---
 
 ### KeyChain
 
 > - iOS 提供的 KeyChain 中，并且删除应用后，数据不会删除。
-> > - 下载安装还能使用。iOS系统提供了一些方法，进行一些简单的封装之后，就可以很方便的使用。
+>   
+>   > - 下载安装还能使用。iOS系统提供了一些方法，进行一些简单的封装之后，就可以很方便的使用。
 
 ---
 
@@ -22,15 +23,17 @@
 > - 手动导入：
 > 
 > > - **SwpKeyChain** 文件夹导入项目中。
-> > > > - **`#import "SwpKeyChain.h`**
+> >   
+> >   > > - **`#import "SwpKeyChain.h`**
 > > 
 > > ---
 > 
 > - CocoaPods 导入:
 > 
 > > - **pod search SwpKeyChain**
-> > > > - **pod 'SwpKeyChain'**
-> > > > - **`#import <SwpKeyChain/SwpKeyChain.h>`**
+> >   
+> >   > > - **pod 'SwpKeyChain'**
+> >   > > > >   > > - **`#import <SwpKeyChain/SwpKeyChain.h>`**
 > > 
 > > ---
 
@@ -65,8 +68,6 @@ SwpKeyChain.swpKeyChainDeleteObject(key);
 
 ### 版本记录
 
-
-
 > - 版本版本：1.2.0
 > 
 > - 更新时间：2018-05-18 13:56:43
@@ -76,11 +77,13 @@ SwpKeyChain.swpKeyChainDeleteObject(key);
 >   > - 修改方法名称。
 > 
 > > ---
-
+> 
 > - 版本版本：1.1.0
-> > - 更新时间：2018-05-18 10:08:37
-> > - 更新内容：
 >   
+>   > - 更新时间：2018-05-18 10:08:37
+>   > 
+>   > - 更新内容：
+>   > 
 >   > - 新增版本的资源，Api 文档
 > 
 > > ---
@@ -98,5 +101,3 @@ SwpKeyChain.swpKeyChainDeleteObject(key);
 > - **著作权归 ©swp_song，如需转载请标明出处**
 
 ---
-
-
