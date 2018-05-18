@@ -7,11 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		2DEC7F34FBEDCDC0906B389F98472F65 /* SwpKeyChain.h in Headers */ = {isa = PBXBuildFile; fileRef = 020B883EF409B4E9B6041CE049D5346F /* SwpKeyChain.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		2DEC7F34FBEDCDC0906B389F98472F65 /* SwpKeyChain.h in Headers */ = {isa = PBXBuildFile; fileRef = 9935D0475540A148C7658CB95B91F1CE /* SwpKeyChain.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		41024C02F1E160BB38717C09922BE850 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BC2C02191C153C1554B35DEE8B2D09D4 /* UIKit.framework */; };
-		66962AF62C86FA2A4B3A5B6F86E7AAD0 /* SwpKeyChain.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A97E7991AEE4C46171C4E88FAF5EFAD /* SwpKeyChain.m */; };
+		66962AF62C86FA2A4B3A5B6F86E7AAD0 /* SwpKeyChain.m in Sources */ = {isa = PBXBuildFile; fileRef = 1212285CA56F51206DA19E5583D282E1 /* SwpKeyChain.m */; };
 		B008118EE128341B66131138EDEC2309 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 908E902E026C5C22904CF9014A5604AD /* Foundation.framework */; };
-		C456482E455427F288455315E591CFAB /* SwpKeyChain-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = BA44B6DD1F94ACDFBA83F294DBF08C84 /* SwpKeyChain-dummy.m */; };
+		C456482E455427F288455315E591CFAB /* SwpKeyChain-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = DC6C9C803264FA63EF6F97BD69E9C675 /* SwpKeyChain-dummy.m */; };
 		FE3D71DCE3986E17A1D9584BF309DFAB /* Pods-SwpKeyChainDemo-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 626DCCA493649FECA1669E864DB5B300 /* Pods-SwpKeyChainDemo-dummy.m */; };
 /* End PBXBuildFile section */
 
@@ -26,26 +26,27 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		01D8D3462EAAA7E8ED884928B08867B3 /* SwpKeyChain.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SwpKeyChain.xcconfig; sourceTree = "<group>"; };
-		020B883EF409B4E9B6041CE049D5346F /* SwpKeyChain.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SwpKeyChain.h; path = SwpKeyChain/Classes/SwpKeyChain.h; sourceTree = "<group>"; };
-		0A97E7991AEE4C46171C4E88FAF5EFAD /* SwpKeyChain.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SwpKeyChain.m; path = SwpKeyChain/Classes/SwpKeyChain.m; sourceTree = "<group>"; };
-		0AA1A90A0F462F9519DE77BC61DF7645 /* SwpKeyChain-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwpKeyChain-prefix.pch"; sourceTree = "<group>"; };
+		06F16D8072942E2A45CF4B4A344F9DEF /* SwpKeyChain.bundle */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "wrapper.plug-in"; name = SwpKeyChain.bundle; path = SwpKeyChain/Resources/SwpKeyChain.bundle; sourceTree = "<group>"; };
+		1212285CA56F51206DA19E5583D282E1 /* SwpKeyChain.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SwpKeyChain.m; path = SwpKeyChain/Classes/SwpKeyChain.m; sourceTree = "<group>"; };
 		2887A379F8D25C1CFE21255525A464E6 /* Pods-SwpKeyChainDemo-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-SwpKeyChainDemo-resources.sh"; sourceTree = "<group>"; };
-		29789E82BBD7FBDE052792ADF0E071C2 /* SwpKeyChain.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; path = SwpKeyChain.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		2C45D53BD80D14CF6718DD16BA329728 /* Pods-SwpKeyChainDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SwpKeyChainDemo.release.xcconfig"; sourceTree = "<group>"; };
+		2E1FCD5DB92160C0B6CDD2E5EF18BDAB /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
 		307235D0BFE7BD5FC3FFBCB8B90EB267 /* Pods-SwpKeyChainDemo-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-SwpKeyChainDemo-frameworks.sh"; sourceTree = "<group>"; };
 		472D1AA6D7FBDB35981EFE61F35F611F /* Pods-SwpKeyChainDemo-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-SwpKeyChainDemo-acknowledgements.plist"; sourceTree = "<group>"; };
 		4B81F74CA5D13714F2453D9F6F906912 /* Pods-SwpKeyChainDemo-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-SwpKeyChainDemo-acknowledgements.markdown"; sourceTree = "<group>"; };
+		6082DB01132ED263D4136F3885FCFE6A /* SwpKeyChain.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SwpKeyChain.xcconfig; sourceTree = "<group>"; };
 		626DCCA493649FECA1669E864DB5B300 /* Pods-SwpKeyChainDemo-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-SwpKeyChainDemo-dummy.m"; sourceTree = "<group>"; };
 		70E6D126A599DD8C24BB485E48CB9C8F /* libPods-SwpKeyChainDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-SwpKeyChainDemo.a"; path = "libPods-SwpKeyChainDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		766B302757AE1AE4E031D1780519B356 /* SwpKeyChain.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; path = SwpKeyChain.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		908E902E026C5C22904CF9014A5604AD /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		BA26B51D9CE10845F4C290DE57290CB6 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
-		BA44B6DD1F94ACDFBA83F294DBF08C84 /* SwpKeyChain-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SwpKeyChain-dummy.m"; sourceTree = "<group>"; };
+		9935D0475540A148C7658CB95B91F1CE /* SwpKeyChain.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SwpKeyChain.h; path = SwpKeyChain/Classes/SwpKeyChain.h; sourceTree = "<group>"; };
 		BC2C02191C153C1554B35DEE8B2D09D4 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
-		C79229CFF2BA458FF6B852C7016C33E5 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		C10A115ABC0C666498F5F87FE3A2F323 /* SwpKeyChain-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwpKeyChain-prefix.pch"; sourceTree = "<group>"; };
 		DAA00C9427D98CA987F0AA9ABBB0F300 /* libSwpKeyChain.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libSwpKeyChain.a; path = libSwpKeyChain.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		DC6C9C803264FA63EF6F97BD69E9C675 /* SwpKeyChain-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SwpKeyChain-dummy.m"; sourceTree = "<group>"; };
 		DED58611E29488FADEF461594AEA7C6D /* Pods-SwpKeyChainDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SwpKeyChainDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		FEF60230A43420ED4B95DA2C239C4C2B /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +78,24 @@
 			name = iOS;
 			sourceTree = "<group>";
 		};
+		215301E367E5B564A4FC5CEE4844B308 /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				7F26ABE5888CAD0D5FC6E0B306645003 /* SwpKeyChain */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		24451C9371250268CC5D8E0E24A90D61 /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				2E1FCD5DB92160C0B6CDD2E5EF18BDAB /* LICENSE */,
+				FEF60230A43420ED4B95DA2C239C4C2B /* README.md */,
+				766B302757AE1AE4E031D1780519B356 /* SwpKeyChain.podspec */,
+			);
+			name = Pod;
+			sourceTree = "<group>";
+		};
 		29FFE45D3F369495132B99D2FD7B09B9 /* Targets Support Files */ = {
 			isa = PBXGroup;
 			children = (
@@ -85,12 +104,31 @@
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
+		2C3AA9173482EDEC59478AD8809AFCBC /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				06F16D8072942E2A45CF4B4A344F9DEF /* SwpKeyChain.bundle */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
 		433CD3331B6C3787F473C941B61FC68F /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
 				10DEDCB394BAA0C7FEDEBE330207B074 /* iOS */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		5AA7E8BEA4B0E1FF0F93A74B51B1A5FD /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				6082DB01132ED263D4136F3885FCFE6A /* SwpKeyChain.xcconfig */,
+				DC6C9C803264FA63EF6F97BD69E9C675 /* SwpKeyChain-dummy.m */,
+				C10A115ABC0C666498F5F87FE3A2F323 /* SwpKeyChain-prefix.pch */,
+			);
+			name = "Support Files";
+			path = "SwpKeyChainDemo/Pods/Target Support Files/SwpKeyChain";
 			sourceTree = "<group>";
 		};
 		728FB9CD0859CD8712644E3F0AB3FE51 /* Pods-SwpKeyChainDemo */ = {
@@ -112,32 +150,24 @@
 			isa = PBXGroup;
 			children = (
 				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
-				E62CFDF4BFCFA02D147E0BC3CF29955F /* Development Pods */,
+				215301E367E5B564A4FC5CEE4844B308 /* Development Pods */,
 				433CD3331B6C3787F473C941B61FC68F /* Frameworks */,
 				B683F4F2410E76CB8B1D5F430B500816 /* Products */,
 				29FFE45D3F369495132B99D2FD7B09B9 /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
 		};
-		9C3360EC8217E755154DEAA4F0DA6355 /* Pod */ = {
+		7F26ABE5888CAD0D5FC6E0B306645003 /* SwpKeyChain */ = {
 			isa = PBXGroup;
 			children = (
-				BA26B51D9CE10845F4C290DE57290CB6 /* LICENSE */,
-				C79229CFF2BA458FF6B852C7016C33E5 /* README.md */,
-				29789E82BBD7FBDE052792ADF0E071C2 /* SwpKeyChain.podspec */,
+				9935D0475540A148C7658CB95B91F1CE /* SwpKeyChain.h */,
+				1212285CA56F51206DA19E5583D282E1 /* SwpKeyChain.m */,
+				24451C9371250268CC5D8E0E24A90D61 /* Pod */,
+				2C3AA9173482EDEC59478AD8809AFCBC /* Resources */,
+				5AA7E8BEA4B0E1FF0F93A74B51B1A5FD /* Support Files */,
 			);
-			name = Pod;
-			sourceTree = "<group>";
-		};
-		B234C71F3381F382B3E1C8557ACFB9E3 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				01D8D3462EAAA7E8ED884928B08867B3 /* SwpKeyChain.xcconfig */,
-				BA44B6DD1F94ACDFBA83F294DBF08C84 /* SwpKeyChain-dummy.m */,
-				0AA1A90A0F462F9519DE77BC61DF7645 /* SwpKeyChain-prefix.pch */,
-			);
-			name = "Support Files";
-			path = "SwpKeyChainDemo/Pods/Target Support Files/SwpKeyChain";
+			name = SwpKeyChain;
+			path = ../..;
 			sourceTree = "<group>";
 		};
 		B683F4F2410E76CB8B1D5F430B500816 /* Products */ = {
@@ -147,26 +177,6 @@
 				DAA00C9427D98CA987F0AA9ABBB0F300 /* libSwpKeyChain.a */,
 			);
 			name = Products;
-			sourceTree = "<group>";
-		};
-		DD607D0A236209592B64682899EDB40E /* SwpKeyChain */ = {
-			isa = PBXGroup;
-			children = (
-				020B883EF409B4E9B6041CE049D5346F /* SwpKeyChain.h */,
-				0A97E7991AEE4C46171C4E88FAF5EFAD /* SwpKeyChain.m */,
-				9C3360EC8217E755154DEAA4F0DA6355 /* Pod */,
-				B234C71F3381F382B3E1C8557ACFB9E3 /* Support Files */,
-			);
-			name = SwpKeyChain;
-			path = ../..;
-			sourceTree = "<group>";
-		};
-		E62CFDF4BFCFA02D147E0BC3CF29955F /* Development Pods */ = {
-			isa = PBXGroup;
-			children = (
-				DD607D0A236209592B64682899EDB40E /* SwpKeyChain */,
-			);
-			name = "Development Pods";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -339,7 +349,7 @@
 		};
 		64FF173FF15E7E0A8C8D52AE2B4B97D0 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 01D8D3462EAAA7E8ED884928B08867B3 /* SwpKeyChain.xcconfig */;
+			baseConfigurationReference = 6082DB01132ED263D4136F3885FCFE6A /* SwpKeyChain.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -384,7 +394,7 @@
 		};
 		C57D2DD4DD255945F5916591C5ED12F1 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 01D8D3462EAAA7E8ED884928B08867B3 /* SwpKeyChain.xcconfig */;
+			baseConfigurationReference = 6082DB01132ED263D4136F3885FCFE6A /* SwpKeyChain.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";

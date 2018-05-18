@@ -106,6 +106,7 @@
 				2D4E915C20AD4CAE00A9D888 /* Sources */,
 				2D4E915D20AD4CAE00A9D888 /* Frameworks */,
 				2D4E915E20AD4CAE00A9D888 /* Resources */,
+				C20C213E4E62BDC560A8B46E /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -178,6 +179,24 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C20C213E4E62BDC560A8B46E /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-SwpKeyChainDemo/Pods-SwpKeyChainDemo-resources.sh",
+				"${PODS_ROOT}/../../SwpKeyChain/Resources/SwpKeyChain.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/SwpKeyChain.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SwpKeyChainDemo/Pods-SwpKeyChainDemo-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */

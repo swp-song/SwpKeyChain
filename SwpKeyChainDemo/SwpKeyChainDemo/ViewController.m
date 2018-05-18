@@ -20,6 +20,10 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
     
+    
+    NSLog(@"SwpKeyChainInfo     = %@", [SwpKeyChain swpKeyChainInfo]);
+    NSLog(@"SwpKeyChainVersion  = %@", [SwpKeyChain swpKeyChainVersion]);
+    
     NSString *bundleIdentifier = [NSBundle.mainBundle objectForInfoDictionaryKey:@"CFBundleIdentifier"];
 
     NSString *key1      = [NSString stringWithFormat:@"%@.NSString", bundleIdentifier];
@@ -38,9 +42,8 @@
     SwpKeyChainSetData(key3, value3);
     NSLog(@"key3 = %@", SwpKeyChainGetData(key3));
 
-    
-    NSString *key   = [NSString stringWithFormat:@"%@", bundleIdentifier];
-    NSString *value = @"Delegate";
+    NSString *key       = [NSString stringWithFormat:@"%@", bundleIdentifier];
+    NSString *value     = @"Delegate";
     [SwpKeyChain swpKeyChainSetData:key value:value];
     NSLog(@"key = %@", SwpKeyChainGetData(key));
     SwpKeyChainDelete(key);

@@ -13,6 +13,29 @@
 /**
  *  @author swp_song
  *
+ *  @brief  swpKeyChainInfo ( 获取 SwpKeyChain 信息 )
+ *
+ *  @return NSDictionary
+ */
++ (NSDictionary *)swpKeyChainInfo {
+    return [NSDictionary dictionaryWithContentsOfFile:[NSBundle.mainBundle pathForResource:@"SwpKeyChain.bundle/SwpKeyChain.plist" ofType:nil]].copy;
+}
+
+/**
+ *  @author swp_song
+ *
+ *  @brief  swpKeyChainVersion  ( 获取 SwpKeyChain 版本号 )
+ *
+ *  @return NSString
+ */
++ (NSString *)swpKeyChainVersion {
+    return [self swpKeyChainInfo][@"Version"];
+}
+
+
+/**
+ *  @author swp_song
+ *
  *  @brief  swpKeyChainSetData  ( KeyChain 存入数据 )
  */
 + (SwpKeyChain * _Nonnull (^)(NSString * _Nonnull, id _Nonnull))swpKeyChainSetData {
@@ -113,6 +136,8 @@ id SwpKeyChainGetData(NSString *key) {
 void SwpKeyChainDelete(NSString *key) {
     _DeleteService(key);
 }
+
+
 
 
 #pragma mark - Private Methods

@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name             = 'SwpKeyChain'
-  s.version          = '1.0.2'
+  s.version          = '1.1.0'
   s.summary          = ' KeyChain 存储工具 '
 
 
@@ -35,7 +35,7 @@ TODO: KeyChain 存储工具
 
   s.source_files          = 'SwpKeyChain', 'SwpKeyChain/Classes/**/*.{h,m}'
   s.public_header_files   = 'SwpKeyChain/Classes/**/*.h'
-  # s.resource              = 'SwpKeyChain/Resources/SwpKeyChain.bundle'
+  s.resource              = 'SwpKeyChain/Resources/SwpKeyChain.bundle'
   s.frameworks            = 'Foundation', 'UIKit'
   s.requires_arc          = true
 

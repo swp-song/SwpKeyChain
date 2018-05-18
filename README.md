@@ -6,7 +6,7 @@
 [![Version](https://img.shields.io/cocoapods/v/SwpKeyChain.svg?style=flat)](https://cocoapods.org/pods/SwpKeyChain)
 [![License](https://img.shields.io/cocoapods/l/SwpKeyChain.svg?style=flat)](https://cocoapods.org/pods/SwpKeyChain)
 [![Platform](https://img.shields.io/cocoapods/p/SwpKeyChain.svg?style=flat)](https://cocoapods.org/pods/SwpKeyChain)
-
+[![SwpKeyChainAPI](https://img.shields.io/badge/SwpKeyChainAPI-v1.1.0-44E0D3.svg)](https://swp-song.com/docs/SwpKeyChain/)
 
 -------
 
@@ -40,7 +40,7 @@
 
 
 
-### 代码示例:
+### 代码示例
 
 ```Objective-C
 //  存入数据
@@ -60,8 +60,21 @@ SwpKeyChain.swpKeyChainDelete(key);
 
 -------
 
+### SwpKeyChain 文档
+
+> * [SwpKeyChain 文档](https://swp-song.com/docs/SwpKeyChain/)
+
+-------
+
 
 ### 版本记录
+
+> * 版本版本：1.1.0
+> * 更新时间：2018-05-18 10:08:37
+> * 更新内容：
+>>  *  新增版本的资源，Api 文档
+
+>> -------
 
 > * 版本版本：1.0.2
 > * 更新时间：2018-05-17 18:42:25
@@ -69,15 +82,6 @@ SwpKeyChain.swpKeyChainDelete(key);
 >>  *  更新一些备注，pod 替换
 
 >> -------
-
-> * 版本版本：1.0.1
-> * 更新时间：2018-05-17 17:35:43
-> * 更新内容：
->>  *  修改 .md 文件。
-
->> -------
-
-
 
 -------
 
