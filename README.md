@@ -8,93 +8,95 @@
 [![Platform](https://img.shields.io/cocoapods/p/SwpKeyChain.svg?style=flat)](https://cocoapods.org/pods/SwpKeyChain)
 [![SwpKeyChainAPI](https://img.shields.io/badge/SwpKeyChainAPI-v1.1.0-44E0D3.svg)](https://swp-song.com/docs/SwpKeyChain/)
 
--------
-
+---
 
 ### KeyChain
 
-> * iOS 提供的 KeyChain 中，并且删除应用后，数据不会删除。
-> * 下载安装还能使用。iOS系统提供了一些方法，进行一些简单的封装之后，就可以很方便的使用。
+> - iOS 提供的 KeyChain 中，并且删除应用后，数据不会删除。
+> > - 下载安装还能使用。iOS系统提供了一些方法，进行一些简单的封装之后，就可以很方便的使用。
 
--------
+---
 
 ### 导入
 
-> * 手动导入：
->
->> * **SwpKeyChain** 文件夹导入项目中。
->> * **`#import "SwpKeyChain.h`**
->>
-> -------
+> - 手动导入：
+> 
+> > - **SwpKeyChain** 文件夹导入项目中。
+> > > > - **`#import "SwpKeyChain.h`**
+> > 
+> > ---
+> 
+> - CocoaPods 导入:
+> 
+> > - **pod search SwpKeyChain**
+> > > > - **pod 'SwpKeyChain'**
+> > > > - **`#import <SwpKeyChain/SwpKeyChain.h>`**
+> > 
+> > ---
 
-
-> * CocoaPods 导入:
->
->> * **pod search SwpKeyChain**
->> * **pod 'SwpKeyChain'**
->> * **`#import <SwpKeyChain/SwpKeyChain.h>`**
->>
-> -------
-
--------
-
-
+---
 
 ### 代码示例
 
-```Objective-C
+```Objective
 //  存入数据
-SwpKeyChainSetData(key3, value3);
-SwpKeyChain.swpKeyChainSetData(key, value);
-[SwpKeyChain swpKeyChainSetData:key value:value];
+SwpKeyChainSetObject(value,key);
+SwpKeyChain.swpKeyChainSetObject(value, key);
+[SwpKeyChain swpKeyChainSetObject:value key:key];
 
 //  读取数据
-[SwpKeyChain swpKeyChainGetData:key];
-SwpKeyChainGetData(key);
+SwpKeyChainGetObject(key);
+[SwpKeyChain swpKeyChainGetObject:key];
+
 
 //  删除数据
-SwpKeyChainDelete(key);
-[SwpKeyChain swpKeyChainDelete:key];
-SwpKeyChain.swpKeyChainDelete(key);
+SwpKeyChainDeleteObject(key);
+SwpKeyChain.swpKeyChainDeleteObject(key);
+[SwpKeyChain swpKeyChainDeleteObject:key];
 ```
 
--------
+---
 
 ### SwpKeyChain 文档
 
-> * [SwpKeyChain 文档](https://swp-song.com/docs/SwpKeyChain/)
+> - [SwpKeyChain 文档](https://swp-song.com/docs/SwpKeyChain/)
 
--------
-
+---
 
 ### 版本记录
 
-> * 版本版本：1.1.0
-> * 更新时间：2018-05-18 10:08:37
-> * 更新内容：
->>  *  新增版本的资源，Api 文档
 
->> -------
 
-> * 版本版本：1.0.2
-> * 更新时间：2018-05-17 18:42:25
-> * 更新内容：
->>  *  更新一些备注，pod 替换
+> - 版本版本：1.2.0
+> 
+> - 更新时间：2018-05-18 13:56:43
+> 
+> - 更新内容：
+>   
+>   > - 修改方法名称。
+> 
+> > ---
 
->> -------
+> - 版本版本：1.1.0
+> > - 更新时间：2018-05-18 10:08:37
+> > - 更新内容：
+>   
+>   > - 新增版本的资源，Api 文档
+> 
+> > ---
 
--------
+---
 
 ### 备注
 
-> * 持续更新, 如果喜欢, 欢迎 Star
+> - 持续更新, 如果喜欢, 欢迎 Star
 
--------
+---
 
 ### 声明
 
- > * **著作权归 ©swp_song，如需转载请标明出处**
+> - **著作权归 ©swp_song，如需转载请标明出处**
 
--------
+---
 
 

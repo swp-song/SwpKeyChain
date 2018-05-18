@@ -29,82 +29,81 @@ NS_ASSUME_NONNULL_BEGIN
  */
 + (NSString *)swpKeyChainVersion;
 
-
 /**
  *  @author swp_song
  *
- *  @brief  swpKeyChainSetData  ( KeyChain 存入数据 )
+ *  @brief  swpKeyChainSetObject    ( KeyChain 存入数据 )
  */
-+ (SwpKeyChain * _Nonnull (^)(NSString * _Nonnull, id _Nonnull))swpKeyChainSetData;
++ (SwpKeyChain * _Nonnull (^)(id _Nonnull, NSString * _Nonnull))swpKeyChainSetObject;
 
 /**
  *  @author swp_song
  *
- *  @brief  swpKeyChainSetData:value:   ( KeyChain 存入数据 )
- *
- *  @param  key     key
+ *  @brief  swpKeyChainSetObject:value: ( KeyChain 存入数据 )
  *
  *  @param  value   value
- */
-+ (void)swpKeyChainSetData:(NSString *)key value:(id)value;
-
-/**
- *  @author swp_song
- *
- *  @brief  SwpKeyChainSetData  ( KeyChain 存入数据 )
  *
  *  @param  key     key
- *
- *  @param  value   value
  */
-void SwpKeyChainSetData(NSString *key, id value);
++ (void)swpKeyChainSetObject:(id)value key:(NSString *)key;
 
 /**
  *  @author swp_song
  *
- *  @brief  swpKeyChainGetData: ( KeyChain 获取数据 )
+ *  @brief  SwpKeyChainSetObject    ( KeyChain 存入数据 )
+ *
+ *  @param  value   value
+ *
+ *  @param  key     key
+ */
+void SwpKeyChainSetObject(id value, NSString *key);
+
+/**
+ *  @author swp_song
+ *
+ *  @brief  swpKeyChainGetObject:   ( KeyChain 获取数据 )
  *
  *  @param  key key
  *
  *  @return id
  */
-+ (id)swpKeyChainGetData:(NSString *)key;
++ (id)swpKeyChainGetObject:(NSString *)key;
 
 /**
  *  @author swp_song
  *
- *  @brief  swpKeyChainGetData  ( KeyChain 获取数据 )
+ *  @brief  SwpKeyChainGetObject    ( KeyChain 获取数据 )
  *
  *  @param  key key
  *
  *  @return id
  */
-id SwpKeyChainGetData(NSString *key);
+id SwpKeyChainGetObject(NSString *key);
 
 /**
  *  @author swp_song
  *
- *  @brief  swpKeyChainDelete   ( KeyChain 移除 )
+ *  @brief  swpKeyChainDeleteObject ( KeyChain 移除 )
  */
-+ (SwpKeyChain * _Nonnull (^)(NSString * _Nonnull))swpKeyChainDelete;
++ (SwpKeyChain * _Nonnull (^)(NSString * _Nonnull))swpKeyChainDeleteObject;
 
 /**
  *  @author swp_song
  *
- *  @brief  swpKeyChainDelete   ( KeyChain 移除 )
+ *  @brief  swpKeyChainDeleteObject ( KeyChain 移除 )
  *
  *  @param  key key
  */
-+ (void)swpKeyChainDelete:(NSString *)key;
++ (void)swpKeyChainDeleteObject:(NSString *)key;
 
 /**
  *  @author swp_song
  *
- *  @brief  SwpKeyChainDelete   ( KeyChain 移除 )
+ *  @brief  SwpKeyChainDeleteObject ( KeyChain 移除 )
  *
  *  @param  key key
  */
-void SwpKeyChainDelete(NSString *key);
+void SwpKeyChainDeleteObject(NSString *key);
 
 @end
 NS_ASSUME_NONNULL_END

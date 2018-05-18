@@ -36,11 +36,11 @@
 /**
  *  @author swp_song
  *
- *  @brief  swpKeyChainSetData  ( KeyChain 存入数据 )
+ *  @brief  swpKeyChainSetObject    ( KeyChain 存入数据 )
  */
-+ (SwpKeyChain * _Nonnull (^)(NSString * _Nonnull, id _Nonnull))swpKeyChainSetData {
-    return ^(NSString *key, id value) {
-        [self.class swpKeyChainSetData:key value:value];
++ (SwpKeyChain * _Nonnull (^)(id _Nonnull, NSString * _Nonnull))swpKeyChainSetObject {
+    return ^(id value, NSString *key) {
+        [self.class swpKeyChainSetObject:value key:key];
         return self;
     };
 }
@@ -49,55 +49,55 @@
 /**
  *  @author swp_song
  *
- *  @brief  swpKeyChainSetData:value:   ( KeyChain 存入数据 )
- *
- *  @param  key     key
+ *  @brief  swpKeyChainSetObject:value: ( KeyChain 存入数据 )
  *
  *  @param  value   value
+ *
+ *  @param  key     key
  */
-+ (void)swpKeyChainSetData:(NSString *)key value:(id)value {
-    SwpKeyChainSetData(key, value);
++ (void)swpKeyChainSetObject:(id)value key:(NSString *)key {
+    SwpKeyChainSetObject(value, key);
 }
 
 /**
  *  @author swp_song
  *
- *  @brief  SwpKeyChainSetData  ( KeyChain 存入数据 )
- *
- *  @param  key     key
+ *  @brief  SwpKeyChainSetObject    ( KeyChain 存入数据 )
  *
  *  @param  value   value
+ *
+ *  @param  key     key
  */
-void SwpKeyChainSetData(NSString *key, id value) {
-    NSMutableDictionary *datas = [NSMutableDictionary dictionary];
-    [datas setObject:value forKey:key];
-    _SaveKeyChain(key, datas);
+void SwpKeyChainSetObject(id value, NSString *key) {
+    NSMutableDictionary *object = [NSMutableDictionary dictionary];
+    [object setObject:value forKey:key];
+    _SaveKeyChain(object, key);
 }
 
 
 /**
  *  @author swp_song
  *
- *  @brief  swpKeyChainGetData: ( KeyChain 获取数据 )
+ *  @brief  swpKeyChainGetObject:   ( KeyChain 获取数据 )
  *
  *  @param  key key
  *
  *  @return id
  */
-+ (id)swpKeyChainGetData:(NSString *)key {
-    return SwpKeyChainGetData(key);
++ (id)swpKeyChainGetObject:(NSString *)key {
+    return SwpKeyChainGetObject(key);
 }
 
 /**
  *  @author swp_song
  *
- *  @brief  SwpKeyChainGetData  ( KeyChain 获取数据 )
+ *  @brief  SwpKeyChainGetObject    ( KeyChain 获取数据 )
  *
  *  @param  key key
  *
  *  @return id
  */
-id SwpKeyChainGetData(NSString *key) {
+id SwpKeyChainGetObject(NSString *key) {
     NSMutableDictionary *datas = (NSMutableDictionary *)_GetKeyChain(key);
     return datas[key];
 }
@@ -105,11 +105,11 @@ id SwpKeyChainGetData(NSString *key) {
 /**
  *  @author swp_song
  *
- *  @brief  swpKeyChainDelete   ( KeyChain 移除 )
+ *  @brief  swpKeyChainDeleteObject ( KeyChain 移除 )
  */
-+ (SwpKeyChain * _Nonnull (^)(NSString * _Nonnull))swpKeyChainDelete {
++ (SwpKeyChain * _Nonnull (^)(NSString * _Nonnull))swpKeyChainDeleteObject {
     return ^(NSString *key) {
-        [self.class swpKeyChainDelete:key];
+        [self.class swpKeyChainDeleteObject:key];
         return self;
     };
 }
@@ -118,22 +118,22 @@ id SwpKeyChainGetData(NSString *key) {
 /**
  *  @author swp_song
  *
- *  @brief  swpKeyChainDelete   ( KeyChain 移除 )
+ *  @brief  swpKeyChainDeleteObject ( KeyChain 移除 )
  *
  *  @param  key key
  */
-+ (void)swpKeyChainDelete:(NSString *)key {
-    SwpKeyChainDelete(key);
++ (void)swpKeyChainDeleteObject:(NSString *)key {
+    SwpKeyChainDeleteObject(key);
 }
 
 /**
  *  @author swp_song
  *
- *  @brief  SwpKeyChainDelete   ( KeyChain 移除 )
+ *  @brief  SwpKeyChainDeleteObject ( KeyChain 移除 )
  *
  *  @param  key key
  */
-void SwpKeyChainDelete(NSString *key) {
+void SwpKeyChainDeleteObject(NSString *key) {
     _DeleteService(key);
 }
 
@@ -143,7 +143,7 @@ void SwpKeyChainDelete(NSString *key) {
 #pragma mark - Private Methods
 
 // 根据 key 保存 KeyChain 数据
-FOUNDATION_STATIC_INLINE void _SaveKeyChain(NSString *service, id value) {
+FOUNDATION_STATIC_INLINE void _SaveKeyChain(id value, NSString *service) {
     
     
     //

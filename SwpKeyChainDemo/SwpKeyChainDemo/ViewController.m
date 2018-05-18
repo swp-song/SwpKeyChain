@@ -28,26 +28,27 @@
 
     NSString *key1      = [NSString stringWithFormat:@"%@.NSString", bundleIdentifier];
     NSString *value1    = @"NSString";
-    [SwpKeyChain swpKeyChainSetData:key1 value:value1];
-    NSLog(@"key1 = %@", [SwpKeyChain swpKeyChainGetData:key1]);
+    [SwpKeyChain swpKeyChainSetObject:value1 key:key1];
+    NSLog(@"key1 = %@", [SwpKeyChain swpKeyChainGetObject:key1]);
     
     NSString     *key2   = [NSString stringWithFormat:@"%@.NSDictionary", bundleIdentifier];
     NSDictionary *value2 = @{@"key1" : @"value1", @"key2" : @"value2", @"key3" : @"value3",};
-    SwpKeyChain.swpKeyChainSetData(key2, value2);
-    NSLog(@"key2 = %@", [SwpKeyChain swpKeyChainGetData:key2]);
+    SwpKeyChain.swpKeyChainSetObject(value2, key2);
+    NSLog(@"key2 = %@", [SwpKeyChain swpKeyChainGetObject:key2]);
     
     
     NSString    *key3   = [NSString stringWithFormat:@"%@.NSArray", bundleIdentifier];
     NSArray     *value3 = @[value1, value2, @[@(1), @(2)], @(1), @(0.5)];
-    SwpKeyChainSetData(key3, value3);
-    NSLog(@"key3 = %@", SwpKeyChainGetData(key3));
+    SwpKeyChainSetObject(value3, key3);
 
     NSString *key       = [NSString stringWithFormat:@"%@", bundleIdentifier];
     NSString *value     = @"Delegate";
-    [SwpKeyChain swpKeyChainSetData:key value:value];
-    NSLog(@"key = %@", SwpKeyChainGetData(key));
-    SwpKeyChainDelete(key);
-    NSLog(@"key = %@", [SwpKeyChain swpKeyChainGetData:key]);
+    [SwpKeyChain swpKeyChainSetObject:value key:key];
+    NSLog(@"key = %@", SwpKeyChainGetObject(key));
+    SwpKeyChainDeleteObject(key);
+//    SwpKeyChain.swpKeyChainDeleteObject(key);
+//    [SwpKeyChain swpKeyChainDeleteObject:key];
+    NSLog(@"key = %@", [SwpKeyChain swpKeyChainGetObject:key]);
     
 }
 
