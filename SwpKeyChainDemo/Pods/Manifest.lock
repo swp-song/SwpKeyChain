@@ -1,5 +1,5 @@
 PODS:
-  - SwpKeyChain (1.2.0)
+  - SwpKeyChain (1.2.2)
 
 DEPENDENCIES:
   - SwpKeyChain (from `../`)
@@ -9,7 +9,7 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  SwpKeyChain: 78364b4b143528ba1a9990571ab574cf3145de07
+  SwpKeyChain: 35430313d87cb012cd67e0996a8930f37fb45576
 
 PODFILE CHECKSUM: 6109d0b5f49f5edc01a7f166a6bbdede2c5087b0
 

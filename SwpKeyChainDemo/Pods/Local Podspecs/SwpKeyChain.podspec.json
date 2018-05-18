@@ -1,6 +1,6 @@
 {
   "name": "SwpKeyChain",
-  "version": "1.2.0",
+  "version": "1.2.2",
   "summary": "KeyChain 存储工具",
   "description": "TODO: KeyChain 存储工具",
   "homepage": "https://github.com/swp-song/SwpKeyChain",
@@ -13,7 +13,7 @@
   },
   "source": {
     "git": "https://github.com/swp-song/SwpKeyChain.git",
-    "tag": "1.2.0"
+    "tag": "1.2.2"
   },
   "platforms": {
     "ios": "8.0"

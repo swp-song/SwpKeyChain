@@ -6,7 +6,7 @@
 [![Version](https://img.shields.io/cocoapods/v/SwpKeyChain.svg?style=flat)](https://cocoapods.org/pods/SwpKeyChain)
 [![License](https://img.shields.io/cocoapods/l/SwpKeyChain.svg?style=flat)](https://cocoapods.org/pods/SwpKeyChain)
 [![Platform](https://img.shields.io/cocoapods/p/SwpKeyChain.svg?style=flat)](https://cocoapods.org/pods/SwpKeyChain)
-[![SwpKeyChainAPI](https://img.shields.io/badge/SwpKeyChainAPI-v1.2.1-44E0D3.svg)](https://swp-song.com/docs/SwpKeyChain/)
+[![SwpKeyChainAPI](https://img.shields.io/badge/SwpKeyChainAPI-v1.2.2-44E0D3.svg)](https://swp-song.com/docs/SwpKeyChain/)
 
 ---
 
@@ -65,6 +65,17 @@ SwpKeyChain.swpKeyChainDeleteObject(key);
 
 ### 版本记录
 
+> - 版本版本：1.2.2
+> 
+> - 更新时间：2018-05-18 14:20:24
+> 
+> - 更新内容：
+>   
+>>> - 修复 pod 文件。
+> 
+
+> > -------
+
 > - 版本版本：1.2.1
 >   
 > - 更新时间：2018-05-18 14:13:02
@@ -74,19 +85,6 @@ SwpKeyChain.swpKeyChainDeleteObject(key);
 >>> - 更新 .md 文件
 > 
 > > -------
-
-> - 版本版本：1.2.0
-> 
-> - 更新时间：2018-05-18 13:56:43
-> 
-> - 更新内容：
->   
->>> - 修改方法名称。
-> 
-> > -------
-
-
-
 
 ---
 

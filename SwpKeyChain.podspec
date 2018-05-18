@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name             = 'SwpKeyChain'
-  s.version          = '1.2.0'
+  s.version          = '1.2.2'
   s.summary          = ' KeyChain 存储工具 '
 
 
