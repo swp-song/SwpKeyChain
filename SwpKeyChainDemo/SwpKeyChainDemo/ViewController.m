@@ -40,6 +40,7 @@
     NSString    *key3   = [NSString stringWithFormat:@"%@.NSArray", bundleIdentifier];
     NSArray     *value3 = @[value1, value2, @[@(1), @(2)], @(1), @(0.5)];
     SwpKeyChainSetObject(value3, key3);
+    NSLog(@"key3 = %@", SwpKeyChainGetObject(key3));
 
     NSString *key       = [NSString stringWithFormat:@"%@", bundleIdentifier];
     NSString *value     = @"Delegate";
